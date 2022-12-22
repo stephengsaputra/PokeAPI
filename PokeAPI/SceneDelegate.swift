@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController()
         navigationController.isNavigationBarHidden = true
         
-        navigationController.pushViewController(ViewController(), animated: false)
+        navigationController.pushViewController(PokemonTableViewVC(), animated: false)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }

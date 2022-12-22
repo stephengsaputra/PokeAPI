@@ -9,24 +9,33 @@
 /* Begin PBXBuildFile section */
 		DB6FF51729543CA700C37A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FF51629543CA700C37A95 /* AppDelegate.swift */; };
 		DB6FF51929543CA700C37A95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FF51829543CA700C37A95 /* SceneDelegate.swift */; };
-		DB6FF51B29543CA700C37A95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FF51A29543CA700C37A95 /* ViewController.swift */; };
+		DB6FF51B29543CA700C37A95 /* PokemonTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FF51A29543CA700C37A95 /* PokemonTableViewVC.swift */; };
 		DB6FF51E29543CA700C37A95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FF51C29543CA700C37A95 /* Main.storyboard */; };
 		DB6FF52029543CA700C37A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6FF51F29543CA700C37A95 /* Assets.xcassets */; };
 		DB6FF52329543CA700C37A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FF52129543CA700C37A95 /* LaunchScreen.storyboard */; };
 		DB6FF52C29543E2D00C37A95 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DB6FF52B29543E2D00C37A95 /* Moya */; };
 		DB6FF52E29543E2D00C37A95 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DB6FF52D29543E2D00C37A95 /* RxMoya */; };
 		DB6FF53129543E5A00C37A95 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB6FF53029543E5A00C37A95 /* RxSwift */; };
+		DB6FF535295441F800C37A95 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FF534295441F800C37A95 /* Pokemon.swift */; };
+		DB6FF5382954465100C37A95 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FF5372954465100C37A95 /* Services.swift */; };
+		DB6FF53C295447E600C37A95 /* PokemonTableViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FF53B295447E600C37A95 /* PokemonTableViewVM.swift */; };
+		DB6FF53F29544BB600C37A95 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DB6FF53E29544BB600C37A95 /* SnapKit */; };
+		DB6FF544295451FE00C37A95 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FF543295451FE00C37A95 /* ImageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB6FF51329543CA700C37A95 /* PokeAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6FF51629543CA700C37A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB6FF51829543CA700C37A95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB6FF51A29543CA700C37A95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB6FF51A29543CA700C37A95 /* PokemonTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewVC.swift; sourceTree = "<group>"; };
 		DB6FF51D29543CA700C37A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB6FF51F29543CA700C37A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB6FF52229543CA700C37A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB6FF52429543CA700C37A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6FF534295441F800C37A95 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		DB6FF5372954465100C37A95 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		DB6FF53B295447E600C37A95 /* PokemonTableViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewVM.swift; sourceTree = "<group>"; };
+		DB6FF543295451FE00C37A95 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6FF53129543E5A00C37A95 /* RxSwift in Frameworks */,
+				DB6FF53F29544BB600C37A95 /* SnapKit in Frameworks */,
 				DB6FF52E29543E2D00C37A95 /* RxMoya in Frameworks */,
 				DB6FF52C29543E2D00C37A95 /* Moya in Frameworks */,
 			);
@@ -64,13 +74,57 @@
 			children = (
 				DB6FF51629543CA700C37A95 /* AppDelegate.swift */,
 				DB6FF51829543CA700C37A95 /* SceneDelegate.swift */,
-				DB6FF51A29543CA700C37A95 /* ViewController.swift */,
-				DB6FF51C29543CA700C37A95 /* Main.storyboard */,
+				DB6FF5362954463D00C37A95 /* Vendor */,
+				DB6FF5332954401E00C37A95 /* Model */,
+				DB6FF539295447C600C37A95 /* View */,
+				DB6FF53229543FF400C37A95 /* Storyboard */,
 				DB6FF51F29543CA700C37A95 /* Assets.xcassets */,
-				DB6FF52129543CA700C37A95 /* LaunchScreen.storyboard */,
 				DB6FF52429543CA700C37A95 /* Info.plist */,
 			);
 			path = PokeAPI;
+			sourceTree = "<group>";
+		};
+		DB6FF53229543FF400C37A95 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DB6FF51C29543CA700C37A95 /* Main.storyboard */,
+				DB6FF52129543CA700C37A95 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DB6FF5332954401E00C37A95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB6FF534295441F800C37A95 /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB6FF5362954463D00C37A95 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				DB6FF5372954465100C37A95 /* Services.swift */,
+				DB6FF543295451FE00C37A95 /* ImageService.swift */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		DB6FF539295447C600C37A95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB6FF53A295447CC00C37A95 /* Pokemon Table View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB6FF53A295447CC00C37A95 /* Pokemon Table View */ = {
+			isa = PBXGroup;
+			children = (
+				DB6FF51A29543CA700C37A95 /* PokemonTableViewVC.swift */,
+				DB6FF53B295447E600C37A95 /* PokemonTableViewVM.swift */,
+			);
+			path = "Pokemon Table View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +147,7 @@
 				DB6FF52B29543E2D00C37A95 /* Moya */,
 				DB6FF52D29543E2D00C37A95 /* RxMoya */,
 				DB6FF53029543E5A00C37A95 /* RxSwift */,
+				DB6FF53E29544BB600C37A95 /* SnapKit */,
 			);
 			productName = PokeAPI;
 			productReference = DB6FF51329543CA700C37A95 /* PokeAPI.app */;
@@ -125,6 +180,7 @@
 			packageReferences = (
 				DB6FF52A29543E2D00C37A95 /* XCRemoteSwiftPackageReference "Moya" */,
 				DB6FF52F29543E5A00C37A95 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				DB6FF53D29544BB600C37A95 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = DB6FF51429543CA700C37A95 /* Products */;
 			projectDirPath = "";
@@ -153,9 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB6FF51B29543CA700C37A95 /* ViewController.swift in Sources */,
+				DB6FF53C295447E600C37A95 /* PokemonTableViewVM.swift in Sources */,
+				DB6FF5382954465100C37A95 /* Services.swift in Sources */,
+				DB6FF51B29543CA700C37A95 /* PokemonTableViewVC.swift in Sources */,
+				DB6FF535295441F800C37A95 /* Pokemon.swift in Sources */,
 				DB6FF51729543CA700C37A95 /* AppDelegate.swift in Sources */,
 				DB6FF51929543CA700C37A95 /* SceneDelegate.swift in Sources */,
+				DB6FF544295451FE00C37A95 /* ImageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +368,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,8 +396,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +451,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		DB6FF53D29544BB600C37A95 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -408,6 +476,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DB6FF52F29543E5A00C37A95 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		DB6FF53E29544BB600C37A95 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB6FF53D29544BB600C37A95 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
