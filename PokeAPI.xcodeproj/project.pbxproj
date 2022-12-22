@@ -13,6 +13,9 @@
 		DB6FF51E29543CA700C37A95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FF51C29543CA700C37A95 /* Main.storyboard */; };
 		DB6FF52029543CA700C37A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6FF51F29543CA700C37A95 /* Assets.xcassets */; };
 		DB6FF52329543CA700C37A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FF52129543CA700C37A95 /* LaunchScreen.storyboard */; };
+		DB6FF52C29543E2D00C37A95 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = DB6FF52B29543E2D00C37A95 /* Moya */; };
+		DB6FF52E29543E2D00C37A95 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = DB6FF52D29543E2D00C37A95 /* RxMoya */; };
+		DB6FF53129543E5A00C37A95 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB6FF53029543E5A00C37A95 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6FF53129543E5A00C37A95 /* RxSwift in Frameworks */,
+				DB6FF52E29543E2D00C37A95 /* RxMoya in Frameworks */,
+				DB6FF52C29543E2D00C37A95 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,11 @@
 			dependencies = (
 			);
 			name = PokeAPI;
+			packageProductDependencies = (
+				DB6FF52B29543E2D00C37A95 /* Moya */,
+				DB6FF52D29543E2D00C37A95 /* RxMoya */,
+				DB6FF53029543E5A00C37A95 /* RxSwift */,
+			);
 			productName = PokeAPI;
 			productReference = DB6FF51329543CA700C37A95 /* PokeAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,10 @@
 				Base,
 			);
 			mainGroup = DB6FF50A29543CA600C37A95;
+			packageReferences = (
+				DB6FF52A29543E2D00C37A95 /* XCRemoteSwiftPackageReference "Moya" */,
+				DB6FF52F29543E5A00C37A95 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = DB6FF51429543CA700C37A95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +373,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB6FF52A29543E2D00C37A95 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		DB6FF52F29543E5A00C37A95 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB6FF52B29543E2D00C37A95 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB6FF52A29543E2D00C37A95 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		DB6FF52D29543E2D00C37A95 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB6FF52A29543E2D00C37A95 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		DB6FF53029543E5A00C37A95 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB6FF52F29543E5A00C37A95 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB6FF50B29543CA600C37A95 /* Project object */;
 }
